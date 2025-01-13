@@ -4,4 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register for TechCon 2024</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->\n</head>\n<body>\n    <!-- Header Section -->\n    <header>\n        <h1>Register for TechCon 2024</h1>\n        <nav>\n            <ul>\n                <li><a href=\"index.html\">Home</a></li>\n                <li><a href=\"about.html\">About</a></li>\n                <li><a href=\"schedule.html\">Schedule</a></li>\n                <li><a href=\"contact.html\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n\n    <!-- Main Content Section -->\n    <main>\n        <h2>Registration Form</h2>\n        <form action=\"submit_registration.php\" method=\"post\">\n            <!-- Name Field -->\n            <label for=\"name\">Full Name:</label>\n            <input type=\"text\" id=\"name\" name=\"name\" required>\n\n            <!-- Email Field -->\n            <label for=\"email\">Email Address:</label>\n            <input type=\"email\" id=\"email\" name=\"email\" required>\n\n            <!-- Password Fields -->\n            <label for=\"password\">Password:</label>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Register for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Registration Form</h2>
+        <form action="submit_registration.php" method="post">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password Fields -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Confirm Password Field -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <!-- Agreement Checkbox -->
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                I agree to the terms and conditions.
+            </label>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TechCon. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
